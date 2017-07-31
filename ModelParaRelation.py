@@ -74,7 +74,6 @@ def get_BR(gSM, gDM, mV, mDM):
     return get_width_inv(gDM,mV,mDM)/get_total_width(gSM, gDM, mV, mDM)
 
 
-
 # gDM from total width
 #---------------------
 def get_gDM_from_width(width, gSM, mV, mDM):
@@ -90,7 +89,6 @@ def get_gDM_from_BR(BR, gSM, mV, mDM):
     return sqrt(gDM2)
 
 
-
 # gSM from invisble BR and total width
 #-------------------------------------
 def get_gSM_from_BRwidth(BR, width, mV, mDM):
@@ -98,6 +96,7 @@ def get_gSM_from_BRwidth(BR, width, mV, mDM):
     return sqrt(gSM2)
 
 get_gSM_from_BRwidth=np.vectorize(get_gSM_from_BRwidth)
+
 
 # gDM from invisble BR and total width
 #-------------------------------------
