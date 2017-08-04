@@ -23,8 +23,11 @@ To run it:
 
 ```sh
 $> $GOPATH/bin/DMsstopModel
-$> open out.png
+$> open go-*.png
 ```
 
-![TotalWidth](https://github.com/rmadar/DMsstopModel/raw/master/out.png)
+![TotalWidth](https://github.com/rmadar/DMsstopModel/raw/master/go-total-width.png)
+![SMCouplingsDep](https://github.com/rmadar/DMsstopModel/raw/master/go-sm-couplings-dep.png)
+![BRandGammaVsCouplings](https://github.com/rmadar/DMsstopModel/raw/master/go-br-gamma-couplings.png)
+![CouplingsVsGammaBR](https://github.com/rmadar/DMsstopModel/raw/master/go-couplings-vs-gammabr.png)
 
