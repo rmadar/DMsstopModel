@@ -86,10 +86,7 @@ func totwidth() {
 	m1 := floats.Span(make([]float64, 1000), mt/5, mt*10)
 	m2 := floats.Span(make([]float64, 1000), 500, 5000)
 
-	tp, err := hplot.NewTiledPlot(draw.Tiles{Cols: 2, Rows: 1})
-	if err != nil {
-		log.Fatal(err)
-	}
+	tp := hplot.NewTiledPlot(draw.Tiles{Cols: 2, Rows: 1})
 
 	{
 		p := tp.Plot(0, 0)
@@ -159,7 +156,7 @@ func totwidth() {
 
 	for _, ext := range []string{".png", ".pdf"} {
 		fname := "go-total-width" + ext
-		err = tp.Save(-1, 20*vg.Centimeter, fname)
+		err := tp.Save(-1, 20*vg.Centimeter, fname)
 		if err != nil {
 			log.Fatalf("error saving %q: %v", fname, err)
 		}
@@ -171,10 +168,7 @@ func smcouplings() {
 	gDM := []float64{0.5, 1, 1.5}
 	g := floats.Span(make([]float64, 150), 0, 1.5)
 
-	tp, err := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
-	if err != nil {
-		log.Fatal(err)
-	}
+	tp := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
 
 	{
 		p := tp.Plot(0, 0)
@@ -225,7 +219,7 @@ func smcouplings() {
 
 	for _, ext := range []string{".png", ".pdf"} {
 		fname := "go-sm-couplings-dep" + ext
-		err = tp.Save(-1, 20*vg.Centimeter, fname)
+		err := tp.Save(-1, 20*vg.Centimeter, fname)
 		if err != nil {
 			log.Fatalf("error saving %q: %v", fname, err)
 		}
@@ -246,10 +240,7 @@ func brcouplings() {
 		}
 	}
 
-	tp, err := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
-	if err != nil {
-		log.Fatal(err)
-	}
+	tp := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
 
 	title := fmt.Sprintf("mV = %0.f TeV ; m_DM = %0.f GeV", mV/1000.0, mDM)
 	{
@@ -269,7 +260,7 @@ func brcouplings() {
 
 	for _, ext := range []string{".png", ".pdf"} {
 		fname := "go-br-gamma-couplings" + ext
-		err = tp.Save(-1, 20*vg.Centimeter, fname)
+		err := tp.Save(-1, 20*vg.Centimeter, fname)
 		if err != nil {
 			log.Fatalf("error saving %q: %v", fname, err)
 		}
@@ -289,10 +280,7 @@ func gammabrcouplings() {
 		}
 	}
 
-	tp, err := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
-	if err != nil {
-		log.Fatal(err)
-	}
+	tp := hplot.NewTiledPlot(draw.Tiles{Rows: 1, Cols: 2})
 
 	title := fmt.Sprintf("mV = %0.f TeV ; m_DM = %0.f GeV", mV/1000.0, mDM)
 	{
@@ -312,7 +300,7 @@ func gammabrcouplings() {
 
 	for _, ext := range []string{".png", ".pdf"} {
 		fname := "go-couplings-vs-gammabr" + ext
-		err = tp.Save(-1, 20*vg.Centimeter, fname)
+		err := tp.Save(-1, 20*vg.Centimeter, fname)
 		if err != nil {
 			log.Fatalf("error saving %q: %v", fname, err)
 		}
