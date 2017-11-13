@@ -17,8 +17,8 @@ $> $GOPATH/bin/DMsstopModel
 $> open go-*.png
 ```
 
-![TotalWidth](https://github.com/rmadar/DMsstopModel/raw/master/go-total-width.png)
-![SMCouplingsDep](https://github.com/rmadar/DMsstopModel/raw/master/go-sm-couplings-dep.png)
-![BRandGammaVsCouplings](https://github.com/rmadar/DMsstopModel/raw/master/go-br-gamma-couplings.png)
-![CouplingsVsGammaBR](https://github.com/rmadar/DMsstopModel/raw/master/go-couplings-vs-gammabr.png)
+![TotalWidth](https://github.com/rmadar/DMsstopModel/raw/master/go-version/go-total-width.png)
+![SMCouplingsDep](https://github.com/rmadar/DMsstopModel/raw/master/go-version/go-sm-couplings-dep.png)
+![BRandGammaVsCouplings](https://github.com/rmadar/DMsstopModel/raw/master/go-version/go-br-gamma-couplings.png)
+![CouplingsVsGammaBR](https://github.com/rmadar/DMsstopModel/raw/master/go-version/go-couplings-vs-gammabr.png)
 
